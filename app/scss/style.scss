@@ -186,6 +186,15 @@
    width: 100%;
    background-color: #ffffff;
    padding-top: 40px;
+   box-shadow: -1px 1px 10px 0px #000000;
+   transition: all 0.5s;
+   &.rightside-menu--close {
+      transform: translateX(500%);
+      -webkit-transform: translateX(500%);
+      -moz-transform: translateX(500%);
+      -ms-transform: translateX(500%);
+      -o-transform: translateX(500%);
+   }
    &__close {
       background-color: transparent;
       border: none;
@@ -208,6 +217,20 @@
       @extend %title-font;
       font-size: 36px;
       line-height: 51px;
+      position: relative;
+      margin-bottom: 17px;
+      padding-bottom: 17px;
+      &::after{
+         content: '';
+         position: absolute;
+         bottom: 0;
+         max-width: 252px;
+         margin: 0 auto;
+         left: 0;
+         right: 0;
+         height: 1px;
+         background: #6D7278;
+      }
    }
    &__text {
       margin-bottom: 75px;
