@@ -75,24 +75,6 @@
       margin-bottom: 16px;
       max-width: 475px;
    }
-   &__info-email {
-      font-weight: 600;
-      font-size: 14px;
-      color: $title;
-      margin-bottom: 22px;
-      padding-left: 30px;
-      display: inline-block;
-      position: relative;
-      &::before {
-         content: "";
-         background-image: url("../images/envelope.svg");
-         left: 0;
-         top: 8px;
-         height: 12px;
-         width: 16px;
-         position: absolute;
-      }
-   }
    &__form {
       display: flex;
    }
@@ -258,6 +240,8 @@
 .breadcrumbs {
    background: rgba(#dfdfdf, .5);
    padding: 13px 14px;
+   position: relative;
+   z-index: 999;
    &__list {
       display: flex;
    }
@@ -736,5 +720,32 @@
    }
    &__item {
       margin: 0 auto;
+   }
+}
+
+.map {
+   margin-top: -53px;
+   margin-bottom: 55px;
+}
+
+.contact {
+   margin-bottom: 100px;
+   &__title {
+      color: $title;
+      @extend %title-font;
+      font-size: 36px;
+      line-height: 60px;
+      padding-bottom: 30px;
+      margin-bottom: 40px;
+      position: relative;
+      &::after {
+         content: '';
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         height: 2px;
+         width: 200px;
+         background-color: #6d7278;
+      }
    }
 }
