@@ -556,6 +556,15 @@
       height: 100%;
       max-height: 1150px;
    }
+   &.gallery-page {
+      .gallery__item img {
+         max-height: 1165px;
+      }
+      .gallery__item:nth-child(8) {
+         grid-column: span 2;
+         grid-row: span 2;
+      }
+   }
 }
 
 .blog-box {
