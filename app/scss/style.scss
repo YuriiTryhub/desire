@@ -748,4 +748,27 @@
          background-color: #6d7278;
       }
    }
+   .contact__social {
+      padding-left: 284px;
+      display: flex;
+      margin-bottom: 20px;
+   }
+   &__social-item + .contact__social-item{
+      padding-left: 40px;
+   }
+   &__text {
+      margin-bottom: 10px;
+   }
+   &__phone {
+      color: $default;
+   }
+   &__city {
+      margin-bottom: 16px;
+   }
+   &__adress {
+      padding-left: 284px;
+   }
+   &__form {
+      padding-left: 284px;
+   }
 }
