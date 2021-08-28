@@ -41,15 +41,15 @@
       padding-bottom: 4px;
       position: relative;
       &::after {
-         content: '';
+         content: "";
          position: absolute;
          bottom: 0;
          left: 0;
          right: 0;
          height: 2px;
          border-radius: 1px;
-         background-color: rgba($title, .7);
-      }     
+         background-color: rgba($title, 0.7);
+      }
    }
 }
 
@@ -238,7 +238,7 @@
 }
 
 .breadcrumbs {
-   background: rgba(#dfdfdf, .5);
+   background: rgba(#dfdfdf, 0.5);
    padding: 13px 14px;
    position: relative;
    z-index: 999;
@@ -246,7 +246,7 @@
       display: flex;
    }
    &__item::after {
-      content: '/';
+      content: "/";
       margin-left: -4px;
       margin-right: 4px;
    }
@@ -592,7 +592,7 @@
 
 .about {
    &__prev {
-      background-image: url('../images/about-bg.jpg');
+      background-image: url("../images/about-bg.jpg");
       background-repeat: no-repeat;
       background-position: top center;
       background-size: cover;
@@ -618,7 +618,7 @@
       margin-bottom: 22px;
       position: relative;
       &::after {
-         content: '';
+         content: "";
          position: absolute;
          bottom: 0;
          left: 0;
@@ -634,7 +634,7 @@
       }
    }
    &__popup {
-      background-image: url('../images/popup-bg.jpg');
+      background-image: url("../images/popup-bg.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: top center;
@@ -649,12 +649,12 @@
    padding-top: 100px;
    position: relative;
    &::after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
-      background-image: url('../images/inspiration-bg.jpg');
+      background-image: url("../images/inspiration-bg.jpg");
       height: 362px;
       z-index: -1;
    }
@@ -676,7 +676,7 @@
       margin-bottom: 24px;
       position: relative;
       &::after {
-         content: '';
+         content: "";
          position: absolute;
          bottom: 0;
          left: 0;
@@ -739,7 +739,7 @@
       margin-bottom: 40px;
       position: relative;
       &::after {
-         content: '';
+         content: "";
          position: absolute;
          bottom: 0;
          left: 0;
@@ -753,7 +753,7 @@
       display: flex;
       margin-bottom: 20px;
    }
-   &__social-item + .contact__social-item{
+   &__social-item + .contact__social-item {
       padding-left: 40px;
    }
    &__text {
@@ -770,5 +770,47 @@
    }
    &__form {
       padding-left: 284px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+   }
+   &__form-input {
+      border: 1px solid #dfdfdf;
+      border-radius: 20px;
+      padding: 6px 17px;
+      margin-bottom: 13px;
+      width: 48%;
+      &::placeholder {
+         color: #a1a1a1;
+         font-family: "Open Sans", sans-serif;
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 27px;
+      }
+   }
+   &__form-area {
+      width: 100%;
+      border: 1px solid #dfdfdf;
+      border-radius: 24px;
+      padding: 14px 17px;
+      min-height: 125px;
+      margin-bottom: 20px;
+      resize: none;
+      &::placeholder {
+         color: #a1a1a1;
+         font-family: "Open Sans", sans-serif;
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 27px;
+      }
+   }
+   &__form-btn {
+      border: none;
+      background-color: $title;
+      color: #ffffff;
+      font-weight: 600;
+      border-radius: 21px;
+      padding: 6px 60px;
+      cursor: pointer;
    }
 }
